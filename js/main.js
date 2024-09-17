@@ -52,28 +52,62 @@ getRosterData()
 /* news page loading news from JSON file */
 
 
+
+async function getNewsFeedData () {
+    const newsfeedGrid = document.querySelector('.newsfeed-grid')
+    const newsPromise = await fetch('data/news.json')
+    const newsJSON = await newsPromise.json()
+
+    //newsfeed on index.html shows the most recent 3 news
+    const sortedNews = newsJSON.sort((a,b) => new Date(b.date) - new Date(a.date))
+
+    const recentNews = sortedNews.slice(0, 3)
+
+    recentNews.forEach(news => {
+        let newsCard = document.createElement('div')
+        newsCard.classList.add('card')
+
+        newsCard.innerHTML = 
+            `
+            <img src="images/${news.image}" alt="${news.title}">
+            <h2 class=card-text text-l text-center"> ${news.title}</h2>
+            <p> ${news.content}</p>
+            <p><i class="fas fa-clock"></i> ${news.date}</p>
+            `;
+        newsfeedGrid.appendChild(newsCard)
+    })
+}
+
+getNewsFeedData()
+
+
 async function getNewsData () {
     const newsPromise = await fetch('data/news.json')
     const newsJSON = await newsPromise.json()
 
     const newsGrid = document.querySelector('.news-grid')
-    //console.log(newsJSON)
-    
+
+
+
+    //news.html shows all the news
     newsJSON.forEach(news => {
         let newsCard = document.createElement('div')
         newsCard.classList.add('card')
 
         newsCard.innerHTML = 
-        `   <img src="images/${news.image}" alt="${news.title}">
-            <h2 class=card-text text-l textcenter"> ${news.title}</h2>
+            `
+           <img src="images/${news.image}" alt="${news.title}">
+            <h2 class=card-text text-l text-center"> ${news.title}</h2>
             <p> ${news.content}</p>
-            <p> <i class="fas fa-clock"></i> ${news.date}</p>
-        `;
+            <p><i class="fas fa-clock"></i> ${news.date}</p>
+            `;
         newsGrid.appendChild(newsCard)
         
     })
     
     }
+
+
 
 
 getNewsData()
