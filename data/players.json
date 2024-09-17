@@ -5,7 +5,8 @@
         "number": 39,
         "position": "Goalie",
         "image": "logo.png",
-        "nationality": "finland.png"
+        "nationality": "finland.png",
+        "role": ""
         
     },
     {
@@ -14,7 +15,8 @@
         "position": "Goalie",
         "number": 82,
         "image": "logo.png",
-        "nationality": "finland.png"
+        "nationality": "finland.png",
+        "role": ""
     },
     {
         "name": "Sandro Wüller",
@@ -22,7 +24,8 @@
         "position": "Goalie",
         "number": 96,
         "image": "logo.png",
-        "nationality": "germany.png"
+        "nationality": "germany.png",
+        "role": ""
     },
     {
         "name": "Max Tonitz",
@@ -31,7 +34,7 @@
         "number": 8,
         "image": "logo.png",
         "nationality": "austria.png",
-        "role": "C"
+        "role": "(C)"
     },
     
     {
@@ -40,7 +43,8 @@
         "position": "Defenseman",
         "number": 53,
         "image": "logo.png",
-        "nationality": "finland.png"
+        "nationality": "finland.png",
+        "role": ""
     },
     {
         "name": "Niklas Schmitz",
@@ -48,7 +52,8 @@
         "position": "Defenseman",
         "number": 63,
         "image": "logo.png",
-        "nationality": "germany.png"
+        "nationality": "germany.png",
+        "role": ""
     },
     {
         "name": "Kevin Berg",
@@ -57,7 +62,7 @@
         "number": 29,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": "C"
+        "role": "(A)"
     },
     {
         "name": "Chris Ungeheuer",
@@ -65,7 +70,8 @@
         "position": "Forward",
         "number": 45,
         "image": "logo.png",
-        "nationality": "germany.png"
+        "nationality": "germany.png",
+        "role": ""
     },
     {
         "name": "Tim Hess",
@@ -74,7 +80,7 @@
         "number": 84,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": "C"
+        "role": "(A)"
     }
 
 ]

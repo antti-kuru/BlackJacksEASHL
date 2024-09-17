@@ -32,7 +32,7 @@ async function getRosterData () {
         playerCard.classList.add('card')
 
         playerCard.innerHTML = ` <img src="images/${player.image}" alt="${player.name}">
-        <h3 class="card-text text-xl text-center">#${player.number} <span class="text-primary">${player.psn}</span></h3>
+        <h3 class="card-text text-xl text-center">#${player.number} <span class="text-primary">${player.psn} ${player.role}</span></h3>
         <p class="text-center"> ${player.name} <img id=nationality src="images/${player.nationality}" alt="nationality"></p>
         `
         if (player.position == "Goalie") {
