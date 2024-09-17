@@ -205,6 +205,13 @@ img {
     background: #f4f4f6;
     color: #000;
     border-radius: 10px;
+   
+}
+.newsfeed  .card-text, .news .card-text {
+    padding: 10px;
+}
+.newsfeed  p, .news p {
+    padding: 10px;
 }
 
 .newsfeed .card p:nth-child(3), .roster .card p:nth-child(3), .news .card p:nth-child(3) {
