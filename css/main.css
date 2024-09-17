@@ -98,7 +98,7 @@ img {
 
 }
 
-.newsfeed .newsfeed-grid, .roster .roster-grid, .news .news.grid {
+.newsfeed .newsfeed-grid, .roster .goalie-grid, .roster .def-grid, .roster .fwd-grid, .news .news-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -120,7 +120,9 @@ img {
 #nationality {
     width: 5%;
 }
-
+#player-card-header {
+    font-size: 40px;
+}
 
 /* utility classes */
 .container {
@@ -205,7 +207,7 @@ img {
     border-radius: 10px;
 }
 
-.newsfeed .card p:nth-child(3), .roster .card p:nth-child(3) {
+.newsfeed .card p:nth-child(3), .roster .card p:nth-child(3), .news .card p:nth-child(3) {
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -326,10 +328,10 @@ img {
         display: block;
     }
 
-    .newsfeed .newsfeed-grid {
+    .newsfeed .newsfeed-grid, .news .news-grid {
         grid-template-columns: 1fr;
     }
-    .newsfeed .card {
+    .newsfeed .card, .news .card {
         margin-bottom: 30px;
     }
 
@@ -347,7 +349,7 @@ img {
     /* Roster */
 
     
-    .roster .roster-grid {
+    .roster .goalie-grid, .roster .def-grid, .roster .fwd-grid {
         grid-template-columns: 1fr;
     }
     .roster-hero {

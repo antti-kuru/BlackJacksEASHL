@@ -17,6 +17,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+/* Roster page loading players from JSON file */
+
+async function getRosterData () {
+    const rosterPromise = await fetch('data/players.json')
+    const rosterJSON = await rosterPromise.json()
+
+    const goalieGrid = document.querySelector(".goalie-grid")
+    const defGrid = document.querySelector(".def-grid")
+    const fwdGrid = document.querySelector(".fwd-grid")
+
+    rosterJSON.forEach(player => {
+        let playerCard = document.createElement('div')
+        playerCard.classList.add('card')
+
+        playerCard.innerHTML = ` <img src="images/${player.image}" alt="${player.name}">
+        <h3 class="card-text text-xl text-center">#${player.number} <span class="text-primary">${player.psn}</span></h3>
+        <p class="text-center"> ${player.name} <img id=nationality src="images/${player.nationality}" alt="nationality"></p>
+        `
+        if (player.position == "Goalie") {
+            goalieGrid.appendChild(playerCard)
+        } else if (player.position == "Defenseman") {
+            defGrid.appendChild(playerCard)
+        } else if (player.position == "Forward") {
+            fwdGrid.appendChild(playerCard)
+        } 
+    })
+}
+
+getRosterData()
+
+
 
 /* news page loading news from JSON file */
 
