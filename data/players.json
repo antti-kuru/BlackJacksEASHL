@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Santeri Kostiainen",
+        "psn": "Kkostiii",
+        "number": 39,
+        "position": "Goalie",
+        "image": "logo.png",
+        "nationality": "finland.png"
+        
+    },
+    {
+        "name": "Simeon Vorselman",
+        "psn": "Simbanho",
+        "position": "Goalie",
+        "number": 82,
+        "image": "logo.png",
+        "nationality": "finland.png"
+    },
+    {
+        "name": "Sandro Wüller",
+        "psn": "I-THE_EAGLE-I",
+        "position": "Goalie",
+        "number": 96,
+        "image": "logo.png",
+        "nationality": "germany.png"
+    },
+    {
+        "name": "Max Tonitz",
+        "psn": " Toneee9",
+        "position": "Defenseman",
+        "number": 8,
+        "image": "logo.png",
+        "nationality": "austria.png",
+        "role": "C"
+    },
+    
+    {
+        "name": "Antti Kuru",
+        "psn": "Anhel_Kuru",
+        "position": "Defenseman",
+        "number": 53,
+        "image": "logo.png",
+        "nationality": "finland.png"
+    },
+    {
+        "name": "Niklas Schmitz",
+        "psn": "xPsykoSkills",
+        "position": "Defenseman",
+        "number": 63,
+        "image": "logo.png",
+        "nationality": "germany.png"
+    },
+    {
+        "name": "Kevin Berg",
+        "psn": "Keuschemisch",
+        "position": "Forward",
+        "number": 29,
+        "image": "logo.png",
+        "nationality": "germany.png",
+        "role": "C"
+    },
+    {
+        "name": "Chris Ungeheuer",
+        "psn": "GERxVillain",
+        "position": "Forward",
+        "number": 45,
+        "image": "logo.png",
+        "nationality": "germany.png"
+    },
+    {
+        "name": "Tim Hess",
+        "psn": "Timasy",
+        "position": "Forward",
+        "number": 84,
+        "image": "logo.png",
+        "nationality": "germany.png",
+        "role": "C"
+    }
+
+]
