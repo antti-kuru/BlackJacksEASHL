@@ -362,6 +362,12 @@ img {
     .roster-hero {
         margin-bottom: 5px;
     }
+    .newsfeed  p, .news p {
+        padding: 10px;
+    }
+    .newsfeed .newsfeed-header {
+        margin-top:40px;
+    }
 }
 
 @media (max-width:500px) {
