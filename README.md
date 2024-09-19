@@ -8,3 +8,5 @@ such as recent news, roster, video highlights, and so on. As this is only front 
 I found this project very interesting and I'm going to update it going forward.
 
 The deployed webiste can be accessed here: https://antti-kuru.github.io/BlackJacksEASHL/index.html
+
+Video presentation: https://youtu.be/IGt2j8U4W_g
