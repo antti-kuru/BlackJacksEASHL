@@ -200,6 +200,12 @@ img {
 }
 
 
+.roster .card h3:hover {
+    color: var(--primary-color);
+    
+}
+
+
 
 .newsfeed .card, .roster .card, .news .card {
     background: #f4f4f6;
@@ -323,6 +329,12 @@ img {
     }
     .videospace .video {
         width: 100%;
+    }
+    .newsfeed .newsfeed-grid, .news .news-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .roster .goalie-grid, .roster .def-grid, .roster .fwd-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
