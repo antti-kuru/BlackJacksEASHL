@@ -6,7 +6,9 @@
         "position": "Goalie",
         "image": "logo.png",
         "nationality": "finland.png",
-        "role": ""
+        "role": "",
+        "id": 0,
+        "stats": "https://sportsgamer.gg/players/3081"
         
     },
     {
@@ -16,7 +18,9 @@
         "number": 82,
         "image": "logo.png",
         "nationality": "finland.png",
-        "role": ""
+        "role": "",
+        "id": 1,
+        "stats": "https://sportsgamer.gg/players/5932"
     },
     {
         "name": "Sandro Wüller",
@@ -25,7 +29,9 @@
         "number": 96,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": ""
+        "role": "",
+        "id": 2,
+        "stats": "https://sportsgamer.gg/players/3290"
     },
     {
         "name": "Max Tonitz",
@@ -34,7 +40,9 @@
         "number": 9,
         "image": "logo.png",
         "nationality": "austria.png",
-        "role": "(C)"
+        "role": "(C)",
+        "id": 3,
+        "stats": "https://sportsgamer.gg/players/3768"
     },
     
     {
@@ -44,7 +52,9 @@
         "number": 53,
         "image": "logo.png",
         "nationality": "finland.png",
-        "role": ""
+        "role": "",
+        "id": 4,
+        "stats": "https://sportsgamer.gg/players/967"
     },
     {
         "name": "Niklas Schmitz",
@@ -53,7 +63,9 @@
         "number": 63,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": ""
+        "role": "",
+        "id": 5,
+        "stats": "https://sportsgamer.gg/players/1501"
     },
     {
         "name": "Kevin Berg",
@@ -62,7 +74,9 @@
         "number": 29,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": "(A)"
+        "role": "(A)",
+        "id": 6,
+        "stats": "https://sportsgamer.gg/players/4293"
     },
     {
         "name": "Chris Ungeheuer",
@@ -71,7 +85,9 @@
         "number": 45,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": ""
+        "role": "",
+        "id": 7,
+        "stats": "https://sportsgamer.gg/players/4881"
     },
     {
         "name": "Tim Hess",
@@ -80,7 +96,9 @@
         "number": 84,
         "image": "logo.png",
         "nationality": "germany.png",
-        "role": "(A)"
+        "role": "(A)",
+        "id": 8,
+        "stats": "https://sportsgamer.gg/players/1468"
     }
 
 ]
