@@ -1,4 +1,6 @@
 
+
+
 setTimeout(function(){
     document.getElementById('hero-header').style.visibility="visible";
 }, 1000)
@@ -28,21 +30,42 @@ async function getRosterData () {
     const fwdGrid = document.querySelector(".fwd-grid")
 
     rosterJSON.forEach(player => {
-        let playerCard = document.createElement('div')
-        playerCard.classList.add('card')
-
-        playerCard.innerHTML = ` <img src="images/${player.image}" alt="${player.name}">
-        <h3 class="card-text text-xl text-center">#${player.number} <span class="text-primary">${player.psn} ${player.role}</span></h3>
-        <p class="text-center"> ${player.name} <img id=nationality src="images/${player.nationality}" alt="nationality"></p>
-        `
-        if (player.position == "Goalie") {
-            goalieGrid.appendChild(playerCard)
-        } else if (player.position == "Defenseman") {
-            defGrid.appendChild(playerCard)
-        } else if (player.position == "Forward") {
-            fwdGrid.appendChild(playerCard)
-        } 
+        let playerCard = document.createElement('div');
+        playerCard.classList.add('card');
+        
+        
+        // Create an anchor element and wrap the card inside it
+        let cardLink = document.createElement('a');
+        cardLink.classList.add("text-dark")
+        cardLink.href = player.stats;
+        cardLink.target = "_blank"; // Optional: Opens the link in a new tab
+        
+        // Build the card's inner HTML
+        cardLink.innerHTML = `
+            <img src="images/${player.image}" alt="${player.name}">
+            <h3 class="card-text text-xl text-center">#${player.number} 
+                <span class="text-primary">${player.psn} ${player.role}</span>
+            </h3>
+            <p class="text-center">
+                ${player.name} 
+                <img id="nationality" src="images/${player.nationality}" alt="nationality">
+            </p>
+        `;
+        
+        // Append the cardLink to the playerCard
+        playerCard.appendChild(cardLink);
+        
+        // Append the playerCard to the appropriate grid based on the player's position
+        if (player.position === "Goalie") {
+            goalieGrid.appendChild(playerCard);
+        } else if (player.position === "Defenseman") {
+            defGrid.appendChild(playerCard);
+        } else if (player.position === "Forward") {
+            fwdGrid.appendChild(playerCard);
+        }
+        
     })
+    
 }
 
 getRosterData()
